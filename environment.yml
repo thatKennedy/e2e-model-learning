@@ -1,0 +1,20 @@
+channels:
+  - conda-forge
+  - cvxgrp
+dependencies:
+  - python=3.6
+  - pytorch=0.3.0
+  - numpy
+  - scipy
+  - lapack
+  - cvxpy
+  - pandas
+  - make
+  - setproctitle
+  - ipdb
+  - matplotlib
+  - seaborn
+  - pip:
+    - block
+    - setGPU
+    - qpth

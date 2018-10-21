@@ -6,3 +6,9 @@
 __pycache__/
 *.py[cod]
 *$py.class
+
+# IDE output
+.idea
+
+# default save directory
+output
