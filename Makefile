@@ -1,7 +1,7 @@
 # change environment name and output directory as desired
 ENVNAME = e2e-ml
 OUTDIR = ${PWD}/output
-
+nRuns = 1
 
 env:
 	conda env create -n ${ENVNAME} -f environment.yml
@@ -16,11 +16,11 @@ news:
 
 # run power scheduler
 sched:
-	cd power_sched && python main.py --save ${OUTDIR}/sched/
+	cd power_sched && python main.py --save ${OUTDIR}/sched/ --nRuns ${nRuns}
 
 # run battery storage learner
 storage:
-	cd battery_storage && python main.py --save ${OUTDIR}/storage/
+	cd battery_storage && python main.py --save ${OUTDIR}/storage/ --nRuns ${nRuns}
 
 
 # for using jupyter. Make sure you have your environment already activated before running
