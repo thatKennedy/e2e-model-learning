@@ -12,7 +12,7 @@ dependencies:
   - make
   - setproctitle
   - ipdb
-  - matplotlib=2.1
+  - matplotlib=1
   - seaborn
   - pip:
     - block
