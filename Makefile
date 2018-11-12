@@ -1,7 +1,7 @@
 # change environment name and output directory as desired
 ENVNAME = e2e-ml
 OUTDIR = ${PWD}/output
-nRuns = 3
+nRuns = 1
 
 env:
 	conda env create -n ${ENVNAME} -f environment.yml
